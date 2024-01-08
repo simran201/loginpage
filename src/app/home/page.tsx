@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect } from "react";
+import axios from "axios";
+
 import { useRouter } from "next/navigation";
 
 export default function Home() {
@@ -20,7 +22,7 @@ export default function Home() {
         onClick={() => {
           localStorage.removeItem('token')
           console.log('logout');
-          window.location.href = "/";
+          router.push("/");
 
         }}
       >
