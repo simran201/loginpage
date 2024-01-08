@@ -8,7 +8,7 @@ export default function Home() {
 
   useEffect(() => {
     if (!localStorage.getItem("token")) {
-      router.push("/login");
+      router.push("/");
     }
   }, []);
   return (
@@ -20,7 +20,7 @@ export default function Home() {
         onClick={() => {
           localStorage.removeItem('token')
           console.log('logout');
-          window.location.href = "/login";
+          window.location.href = "/";
 
         }}
       >
