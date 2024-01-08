@@ -3,17 +3,17 @@ import axios from "axios";
 import { useRouter } from "next/navigation";
 export default function Home() {
   const router = useRouter();
+const loggedIn=()=>{
+  router.push("/login");
 
-  const loginPage = () => {
-    router.push("/login");
-  };
+}
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="main-page">
-        <h1 className="main-title">Welcome To My page</h1>
-        <p> To pursue all the benifits please log in !😀</p>
-        <button onClick={loginPage}>Go to Log In Page</button>
+    <main className="main-page ">
+      <div className="main-title">
+        <h2>Welcome to my page !</h2>
       </div>
+      <h4 className="subtitle">Loggin to enjoy and see more benifits</h4>
+      <button onClick={loggedIn}>Go to login Page ! Click here😒</button>
     </main>
   );
 }
