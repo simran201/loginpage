@@ -37,6 +37,10 @@ export default function Login() {
   };
 
   return (
+    <>
+    <div className="button">
+        
+    </div>
     <div className="login-page">
       <h1 className="main-title">Get more things done with Loggin platform.</h1>
       <p>
@@ -62,5 +66,6 @@ export default function Login() {
         Login
       </button>
     </div>
+    </>
   );
 }

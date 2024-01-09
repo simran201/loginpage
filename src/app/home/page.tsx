@@ -7,10 +7,11 @@ export default function Home() {
   const router = useRouter();
   useEffect(() => {
     if (!localStorage.getItem("token")) {
-      router.push("/");
+      router.push("/login");
     }
+    
   }, []);
-  
+
   return (
     <>
       <div className="main-page">
